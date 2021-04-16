@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Domino.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\Domino.dir/objects.a @CMakeFiles\Domino.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\Domino.dir/objects.a -Wl,--no-whole-archive  -o Domino.exe -Wl,--out-implib,libDomino.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Domino.dir\linklibs.rsp

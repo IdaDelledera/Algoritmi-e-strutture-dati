@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\QickSort.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\QickSort.dir/objects.a @CMakeFiles\QickSort.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\QickSort.dir/objects.a -Wl,--no-whole-archive  -o QickSort.exe -Wl,--out-implib,libQickSort.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\QickSort.dir\linklibs.rsp

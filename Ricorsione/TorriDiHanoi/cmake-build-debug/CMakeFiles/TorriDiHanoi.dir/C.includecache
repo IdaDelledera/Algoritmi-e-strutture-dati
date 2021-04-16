@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Ricorsione/TorriDiHanoi/main.c
+stdio.h
+-
+

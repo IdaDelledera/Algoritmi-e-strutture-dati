@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\zaino.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\zaino.dir/objects.a @CMakeFiles\zaino.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\zaino.dir/objects.a -Wl,--no-whole-archive  -o zaino.exe -Wl,--out-implib,libzaino.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\zaino.dir\linklibs.rsp
