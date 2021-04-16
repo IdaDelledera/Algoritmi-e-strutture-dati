@@ -1,0 +1,3 @@
+C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Ricorsione/mcd/cmake-build-debug/CMakeFiles/mcd.dir
+C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Ricorsione/mcd/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Ricorsione/mcd/cmake-build-debug/CMakeFiles/rebuild_cache.dir
