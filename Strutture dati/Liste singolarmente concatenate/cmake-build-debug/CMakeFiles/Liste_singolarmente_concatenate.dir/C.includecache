@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Strutture dati/Liste singolarmente concatenate/main.c
+stdio.h
+-
+malloc.h
+-
+
