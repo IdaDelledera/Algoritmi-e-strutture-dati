@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2020.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\RadixSort.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\RadixSort.dir/objects.a @CMakeFiles\RadixSort.dir\objects1.rsp
-C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\RadixSort.dir/objects.a -Wl,--no-whole-archive  -o RadixSort.exe -Wl,--out-implib,libRadixSort.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\RadixSort.dir\linklibs.rsp
