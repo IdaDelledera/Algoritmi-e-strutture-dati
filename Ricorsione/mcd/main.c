@@ -4,8 +4,8 @@ int mcd(int a, int b);
 
 int main() {
 
-    int a=5;
-    int b=5;
+    int a=7;
+    int b=3;
     printf("%d", mcd(a,b));
 
 }
