@@ -26,24 +26,28 @@ void reverseList(List *list);
 
 void concatList(List *list1, List *list2);
 
+void addInQueue(List *list, int n);
+
+int deleteInQueue(List *list);
+
 int main() {
 
     List *list1 = inizializzaLista();
 
-    push(list1, 1);
-    push(list1, 2);
-    push(list1, 3);
-    push(list1, 4);
+     push(list1, 1);
+     push(list1, 2);
+     push(list1, 3);
+     push(list1, 4);
 
-    stampaLista(list1);
+     stampaLista(list1);
 
-    pop(list1);
+     pop(list1);
 
-    stampaLista(list1);
+     stampaLista(list1);
 
-    reverseList(list1);
+     reverseList(list1);
 
-    stampaLista(list1);
+     stampaLista(list1);
 
     List *list2 = inizializzaLista();
 
@@ -51,13 +55,15 @@ int main() {
     push(list2, 23);
     push(list2, 34);
     push(list2, 41);
+    addInQueue(list2, 2);
+
+    stampaLista(list2);
+
+    deleteInQueue(list2);
 
     stampaLista(list2);
 
     concatList(list1,list2);
-
-
-
 
     return 0;
 }
@@ -138,13 +144,48 @@ void reverseList(List *list) {
 }
 
 
-void concatList(List *list1, List *list2){
+void concatList(List *list1, List *list2) {
 
-    Node *corrente1=list1->head;
+    Node *corrente1 = list1->head;
 
-    while (corrente1->next!=NULL) {
+    while (corrente1->next != NULL) {
         corrente1 = corrente1->next;
     }
-    corrente1->next=list2->head;
+    corrente1->next = list2->head;
     stampaLista(list1);
 }
+
+void addInQueue(List *list, int n) {
+
+    Node *current = list->head;
+    Node *newNode = (Node *) malloc(sizeof(Node));
+
+    while (current->next != NULL) {
+        current = current->next;
+    }
+
+    current->next = newNode;
+    newNode->num = n;
+    newNode->next = NULL;
+    list->size++;
+}
+
+int deleteInQueue(List *list) {
+    int n;
+    Node *node = list->head;
+    Node *lastNode = list->head;
+
+    while (lastNode->next != NULL) {
+        lastNode = lastNode->next;
+    }
+
+    while (node->next != lastNode) {
+        node = node->next;
+    }
+    node->next = NULL;
+    n = lastNode->num;
+    free(lastNode);
+    list->size--;
+    return n;
+}
+
