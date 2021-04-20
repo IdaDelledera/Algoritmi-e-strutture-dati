@@ -26,6 +26,8 @@ void reverseList(List *list);
 
 void concatList(List *list1, List *list2);
 
+int peek(List *list);
+
 void addInQueue(List *list, int n);
 
 int deleteInQueue(List *list);
@@ -64,6 +66,8 @@ int main() {
     stampaLista(list2);
 
     concatList(list1,list2);
+
+    printf("Peek list %d", peek(list2));
 
     return 0;
 }
@@ -155,6 +159,14 @@ void concatList(List *list1, List *list2) {
     stampaLista(list1);
 }
 
+int peek(List *list){
+
+    int temp;
+
+    Node *first=list->head;
+    temp=first->num;
+    return temp;
+}
 void addInQueue(List *list, int n) {
 
     Node *current = list->head;
