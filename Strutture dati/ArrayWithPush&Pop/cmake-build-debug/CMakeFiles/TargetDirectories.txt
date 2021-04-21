@@ -1,3 +1,0 @@
-C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Strutture dati/ArrayWithPush&Pop/cmake-build-debug/CMakeFiles/ArrayWithPush_Pop.dir
-C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Strutture dati/ArrayWithPush&Pop/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Strutture dati/ArrayWithPush&Pop/cmake-build-debug/CMakeFiles/rebuild_cache.dir

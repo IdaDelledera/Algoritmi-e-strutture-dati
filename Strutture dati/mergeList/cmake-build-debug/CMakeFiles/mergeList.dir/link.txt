@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\mergeList.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\mergeList.dir/objects.a @CMakeFiles\mergeList.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\mergeList.dir/objects.a -Wl,--no-whole-archive  -o mergeList.exe -Wl,--out-implib,libmergeList.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\mergeList.dir\linklibs.rsp
