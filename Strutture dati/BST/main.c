@@ -57,13 +57,13 @@ int main() {
 
     printf("L'altezza dell'albero e':%d\n", altezza(root));
 
-    delete(root,60);
-
-    inOrder(root);
-
-    //delete(root, 12);
+    //delete(root,60);
 
    // inOrder(root);
+
+  //  delete(root, 12);
+
+  //  inOrder(root);
 
    // delete(root,40);
 
@@ -160,12 +160,12 @@ TreeNode* deleteNode(TreeNode *root, int val){
         root->right = deleteNode(root->right, val);
     else {
         if (root->left == NULL) {
-            struct node* temp = root->right;
+            TreeNode* temp = root->right;
             free(root);
             return temp;
         }
         else if (root->right == NULL) {
-            struct TreeNode* app = root->left;
+            TreeNode* app = root->left;
             free(root);
             return app;
         }
