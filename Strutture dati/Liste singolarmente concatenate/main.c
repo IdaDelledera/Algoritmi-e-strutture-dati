@@ -36,12 +36,12 @@ int main() {
 
     List *list1 = inizializzaLista();
 
-     push(list1, 1);
-     push(list1, 2);
-     push(list1, 3);
-     push(list1, 4);
+    push(list1, 1);
+    push(list1, 2);
+    push(list1, 3);
+    push(list1, 4);
 
-     stampaLista(list1);
+    stampaLista(list1);
 
      pop(list1);
 
@@ -65,6 +65,7 @@ int main() {
 
     stampaLista(list2);
 
+    printf("La lista concatenata e':\n");
     concatList(list1,list2);
 
     printf("Peek list %d", peek(list2));
@@ -150,6 +151,19 @@ void reverseList(List *list) {
 
 void concatList(List *list1, List *list2) {
 
+    if (isEmpty(list1)==0 && isEmpty(list2)==0)
+        printf("le liste sono vuote");
+
+    if(list1->size==0){
+        stampaLista(list2);
+        return;
+    }
+
+    if(list2->size==0){
+        stampaLista(list1);
+        return;
+    }
+
     Node *corrente1 = list1->head;
 
     while (corrente1->next != NULL) {
@@ -160,13 +174,9 @@ void concatList(List *list1, List *list2) {
 }
 
 int peek(List *list){
-
-    int temp;
-
-    Node *first=list->head;
-    temp=first->num;
-    return temp;
+    return list->head->num;
 }
+
 void addInQueue(List *list, int n) {
 
     Node *current = list->head;
