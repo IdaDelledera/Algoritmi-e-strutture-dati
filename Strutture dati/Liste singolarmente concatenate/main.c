@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
 
-
 typedef struct {
     struct Node *next;
     int num;
