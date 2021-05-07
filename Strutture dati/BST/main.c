@@ -24,6 +24,8 @@ void findMax(TreeNode *root);
 
 TreeNode *delete(TreeNode *root, int val);
 
+void printNodesAtLevel(TreeNode* current, int currentLevel, int level);
+
 int altezza(TreeNode *root);
 
 int main() {
@@ -68,6 +70,8 @@ int main() {
    // delete(root,40);
 
     //inOrder(root);
+
+    printNodesAtLevel(root, 0, 2);
 
     return 0;
 }
@@ -191,4 +195,18 @@ int altezza(TreeNode *root) {
             else
                 return (altezzaDestra+1);
         }
+}
+
+void printNodesAtLevel(TreeNode* current, int currentLevel, int level) {
+
+    if(current == NULL) {
+        return;
+    }
+    if(currentLevel == level) {
+        printf("%d, ", current->num);
+        return;
+    }
+
+    printNodesAtLevel(current->left, currentLevel+1, level);
+    printNodesAtLevel(current->right, currentLevel+1, level);
 }
