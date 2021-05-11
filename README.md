@@ -16,8 +16,13 @@
 - Ricorsione
     - Mcd
     - Torri di Hanoi
+    - Stringa palindroma
     
 - Strutture dati
     - BST
     - Liste
     - Liste merge
+    - Heap
+    
+-Grafi
+    - BST
