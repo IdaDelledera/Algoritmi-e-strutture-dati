@@ -23,6 +23,7 @@
     - Liste
     - Liste merge
     - Heap
+    - Queue
     
 -Grafi
-    - BST
+    - BSF, DFS, Topological Sort
