@@ -6,7 +6,7 @@
 
     int main() {
 
-        char a[] = "anna";
+        char a[] = "rotor";
 
 
         if (palindromeString(a))
