@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <malloc.h>
 
+int max = 0;
+int vette = 0;
+
 typedef struct {
     struct Node *next;
     int value
@@ -17,20 +20,24 @@ List *inizializzaList();
 
 void printList(List *list);
 
-int pickNode(List *list, Node *current);
+int pickNode(Node *node);
 
 int main() {
 
     List *list = inizializzaList();
-    push(list, 22);
-    push(list, 55);
-    push(list, 6);
+    push(list, 3);
+    push(list, 7);
+    push(list, 5);
+    push(list, 8);
+    push(list, 4);
+    push(list, 3);
+    push(list, 2);
+    push(list, 9);
     push(list, 1);
-    push(list, 0);
 
     printList(list);
 
-    printf("\nI nodi pick sono %d", pickNode(list, list->head));
+    printf("\nI nodi pick sono %d", pickNode(list->head));
 }
 
 List *inizializzaList() {
@@ -49,7 +56,6 @@ void push(List *list, int num) {
 }
 
 void printList(List *list) {
-
     Node *current = list->head;
     while (current != NULL) {
         printf("%d->", current->value);
@@ -58,27 +64,18 @@ void printList(List *list) {
     printf("NULL");
 }
 
-int pickNode(List *list, Node *current) {
+int pickNode(Node *node) {
 
-    int app;
-    current = list->head;
-    Node *next = current->next;
-
-    app = list->size;
-
-    if (list->size == 0)
+    if (node == NULL)
         return 0;
 
-    if (list->size == 1)
-        return 1;
-
-    if (current->value < next->value) {
-        app--;
-
+    if (node != NULL) {
+        pickNode(node->next);
+        if (max < node->value) {
+            max = node->value;
+            vette++;
+        }
     }
-
-    printf("\n%d", app);
-
-    return app;
+    return vette;
 }
 

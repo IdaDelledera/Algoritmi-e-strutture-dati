@@ -6,6 +6,8 @@ void bfs(int graph[][4], int start, int n);
 
 void dfs(int graph[][4], int start, int n);
 
+
+
 void topologicalSort(int graph[][8], int start, int n);
 
 int topologicalSortArray[8];
@@ -25,12 +27,15 @@ int main() {
     printf("DFS:\n");
     dfs(graph, 1, 4);
     puts("\n");
+
     printf("Topological Sort\n");
     topologicalSort(graph, 1, 4);
 
     for (int i = 1; i < 8; ++i) {
         printf("%i, ", topologicalSortArray[i]);
     }
+
+
 
 
 }
@@ -91,3 +96,4 @@ void topologicalSort(int graph[][8], int start, int n){
         }
     }
 }
+

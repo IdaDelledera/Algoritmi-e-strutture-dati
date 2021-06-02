@@ -31,31 +31,35 @@ void addInQueue(List *list, int n);
 
 int deleteInQueue(List *list);
 
+
+
 int main() {
 
     List *list1 = inizializzaLista();
 
     push(list1, 1);
-    push(list1, 2);
+    push(list1, 0);
     push(list1, 3);
     push(list1, 4);
 
     stampaLista(list1);
 
-     pop(list1);
 
-     stampaLista(list1);
 
-     reverseList(list1);
+    pop(list1);
 
-     stampaLista(list1);
+    stampaLista(list1);
+
+    reverseList(list1);
+
+    stampaLista(list1);
 
     List *list2 = inizializzaLista();
 
     push(list2, 11);
-    push(list2, 23);
-    push(list2, 34);
-    push(list2, 41);
+    push(list2, 3);
+    push(list2, 14);
+    push(list2, 1);
     addInQueue(list2, 2);
 
     stampaLista(list2);
@@ -65,9 +69,10 @@ int main() {
     stampaLista(list2);
 
     printf("La lista concatenata e':\n");
-    concatList(list1,list2);
+    concatList(list1, list2);
 
-    printf("Peek list %d", peek(list2));
+    printf("Peek list %d\n", peek(list2));
+
 
     return 0;
 }
@@ -150,15 +155,15 @@ void reverseList(List *list) {
 
 void concatList(List *list1, List *list2) {
 
-    if (isEmpty(list1)==0 && isEmpty(list2)==0)
+    if (isEmpty(list1) == 0 && isEmpty(list2) == 0)
         printf("le liste sono vuote");
 
-    if(list1->size==0){
+    if (list1->size == 0) {
         stampaLista(list2);
         return;
     }
 
-    if(list2->size==0){
+    if (list2->size == 0) {
         stampaLista(list1);
         return;
     }
@@ -172,7 +177,7 @@ void concatList(List *list1, List *list2) {
     stampaLista(list1);
 }
 
-int peek(List *list){
+int peek(List *list) {
     return list->head->num;
 }
 
@@ -209,4 +214,6 @@ int deleteInQueue(List *list) {
     list->size--;
     return n;
 }
+
+
 
