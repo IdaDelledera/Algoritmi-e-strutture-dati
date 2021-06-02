@@ -5,6 +5,7 @@
     - Insertion Sort
     - Merge Sort
     - Quick Sort
+    - Selection Sort
     
 - Programmazione dinamica
     - Domino
@@ -17,6 +18,8 @@
     - Mcd
     - Torri di Hanoi
     - Stringa palindroma
+    - Somma elementi di un array
+    - Vette di una lista
     
 - Strutture dati
     - BST
@@ -25,5 +28,5 @@
     - Heap
     - Queue
     
--Grafi
+- Grafi
     - BSF, DFS, Topological Sort

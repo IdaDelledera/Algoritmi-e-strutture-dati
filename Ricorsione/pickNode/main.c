@@ -32,7 +32,7 @@ int main() {
     push(list, 4);
     push(list, 3);
     push(list, 2);
-    push(list, 9);
+    push(list, 1);
     push(list, 1);
 
     printList(list);
