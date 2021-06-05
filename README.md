@@ -27,6 +27,7 @@
     - Liste merge
     - Heap
     - Queue
+    - BST true or false
     
 - Grafi
     - BSF, DFS, Topological Sort
