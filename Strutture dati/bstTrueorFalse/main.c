@@ -14,27 +14,34 @@ void inOrder(TreeNode *current);
 
 int findMaxRight(TreeNode *root);
 
-int findMaxLeft(TreeNode *root);
+int findMinLeft(TreeNode *root);
 
 bool bstTrueorFalse(TreeNode *root, int a, int b);
+
+void Decrescente(TreeNode *root);
+
 
 
 int main() {
 
     TreeNode *root = NULL;
 
-    root = insert(root, 40);
+    root = insert(root, 30);
     insert(root, 15);
-    insert(root, 70);
-    insert(root, 3);
-    insert(root, 10);
     insert(root, 60);
+    insert(root, 7);
+    insert(root, 22);
+    insert(root, 45);
+    insert(root, 75);
+    insert(root, 17);
+    insert(root, 27);
 
-
-    if (bstTrueorFalse(root, 30, 70))
-        printf("vero");
+    if (bstTrueorFalse(root, 8, 75))
+        printf("vero\n");
     else
-        printf("falso");
+        printf("falso\n");
+
+    Decrescente(root);
 
 }
 
@@ -58,14 +65,6 @@ TreeNode *insert(TreeNode *root, int val) {
     return root;
 }
 
-void inOrder(TreeNode *current) {
-    if (current != NULL) {
-        inOrder(current->left);
-        printf("%d, ", current->num);
-        inOrder(current->right);
-    }
-}
-
 int findMaxRight(TreeNode *root) {
 
     if (root == NULL)
@@ -77,37 +76,47 @@ int findMaxRight(TreeNode *root) {
     return root->num;
 }
 
-int findMaxLeft(TreeNode *root) {
+int findMinLeft(TreeNode *root) {
 
     if (root == NULL)
         return 0;
 
-    root = root->left;
+    while(root!=NULL && root->left!=NULL)
+        root=root->left;
 
-    return findMaxRight(root);
+
+    return root->num;
 }
 
 bool bstTrueorFalse(TreeNode *root, int a, int b){
 
     if(root == NULL)
         return false;
-
     if (root->num == a){
         if (root->left == NULL && findMaxRight(root)<=b){
             return true;
         }
     }
-
     if(root->num == b){
-        if (root->right == NULL && findMaxLeft(root)<=a){
+        if (root->right == NULL && findMinLeft(root) <= a){
             return true;
         }
     }
-
-    if (findMaxRight(root)<=b && findMaxLeft(root)>=a)
+    if (findMaxRight(root)<=b && findMinLeft(root) >= a)
         return true;
 
     return false;
 }
+
+void Decrescente(TreeNode *root){
+
+    if(root == NULL)
+        return;
+
+    Decrescente(root->right);
+    printf("%d, ", root->num);
+    Decrescente(root->left);
+}
+
 
 
