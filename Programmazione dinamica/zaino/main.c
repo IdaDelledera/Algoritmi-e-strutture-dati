@@ -9,7 +9,7 @@ int zainoRecursive(int w[], int p[], int n, int C);
 
 int main() {
 
-    int p[] = {60, 100, 120};
+    int p[] = {60, 90, 120};
     int w[] = {10, 20, 30};
     int C = 50;
     int n = 4;
@@ -34,8 +34,7 @@ int zainoIterative(int w[], int p[], int n, int C) {
             } else if (C < w[i - 1]) {
                 DP[i][j] = DP[i - 1][j];
             } else {
-                DP[i][j] = max(DP[i - 1][j], p[i - 1] + DP[i - 1][j - w[i - 1]],
-                               (p[i - 1] / w[i - 1]) + DP[i - 1][j - w[i - 1]]);
+                DP[i][j] = max(DP[i - 1][j], p[i - 1] + DP[i - 1][j - w[i - 1]]);
             }
         }
     }

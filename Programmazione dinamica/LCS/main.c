@@ -7,16 +7,18 @@ int max(int c1, int c2);
 
 int lcsIterative(char T[], char U[], int lenghtT, int lenghtU);
 
+
 int main() {
 
-    char T[] = "ATTCGATTTTT";
-    char U[] = "AGTTTDDETTT";
+    char T[] = "casacca";
+    char U[] = "casac";
 
     int lunghezzaT = strlen(T);
     int lunghezzaU = strlen(U);
 
     printf("\nIl risultato della LCS ricorsiva e':%d", lcsRecursive(T, U, lunghezzaT, lunghezzaU));
     printf("\nIl risultato della LCS iterativa e':%d", lcsIterative(T, U, lunghezzaT, lunghezzaU));
+
 }
 
 int max(int c1, int c2) {
@@ -61,8 +63,6 @@ int lcsIterative(char T[], char U[], int lenghtT, int lenghtU) {
     }
     return DP[lenghtT][lenghtU];
 }
-
-
 
 
 

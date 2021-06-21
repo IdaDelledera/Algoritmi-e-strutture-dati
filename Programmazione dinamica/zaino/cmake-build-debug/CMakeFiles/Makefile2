@@ -63,10 +63,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\zaino"
+CMAKE_SOURCE_DIR = "C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\Programmazione dinamica\zaino"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\zaino\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\Programmazione dinamica\zaino\cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/zaino.dir/clean
 CMakeFiles/zaino.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\zaino.dir\build.make CMakeFiles/zaino.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\zaino.dir\build.make CMakeFiles/zaino.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\zaino\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target zaino"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\Programmazione dinamica\zaino\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target zaino"
 .PHONY : CMakeFiles/zaino.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/zaino.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\zaino\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\Programmazione dinamica\zaino\cmake-build-debug\CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/zaino.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\zaino\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Ida\Desktop\algoritmi\Algoritmi & Strutture Dati\Programmazione dinamica\zaino\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/zaino.dir/rule
 
 # Convenience name for target.

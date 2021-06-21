@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/zaino/main.c" "C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/zaino/cmake-build-debug/CMakeFiles/zaino.dir/main.c.obj"
+  "C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Programmazione dinamica/zaino/main.c" "C:/Users/Ida/Desktop/algoritmi/Algoritmi & Strutture Dati/Programmazione dinamica/zaino/cmake-build-debug/CMakeFiles/zaino.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
